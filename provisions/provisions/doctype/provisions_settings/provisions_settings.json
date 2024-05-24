@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2023-02-11 18:04:28.956309",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "end_of_service_provision_section",
+  "end_of_service_expense_account",
+  "end_of_service_operation_expense_account",
+  "end_of_service_expense_cost_center",
+  "column_break_3",
+  "end_of_service_provision_account",
+  "end_of_service_cost_center",
+  "tickets_provision_section",
+  "tickets_expense_account",
+  "tickets_operation_expense_account",
+  "tickets_expense_cost_center",
+  "column_break_7",
+  "tickets_provision_account",
+  "tickets_cost_center",
+  "leaves_provision_section",
+  "leaves_expense_account",
+  "leaves_operation_expense_account",
+  "leaves_expense_cost_center",
+  "column_break_11",
+  "leaves_provision_account",
+  "leaves_cost_center"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "end_of_service_provision_section",
+   "fieldtype": "Section Break",
+   "label": "End of Service Provision"
+  },
+  {
+   "fieldname": "end_of_service_expense_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Admin Expense Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_of_service_provision_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Provision Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tickets_provision_section",
+   "fieldtype": "Section Break",
+   "label": "Tickets Provision"
+  },
+  {
+   "fieldname": "tickets_expense_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Admin Expense Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tickets_provision_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Provision Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "leaves_provision_section",
+   "fieldtype": "Section Break",
+   "label": "Leaves Provision"
+  },
+  {
+   "fieldname": "leaves_expense_account",
+   "fieldtype": "Link",
+   "label": "Admin Expense Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "leaves_provision_account",
+   "fieldtype": "Link",
+   "label": "Provision Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tickets_cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "read_only": 1
+  },
+  {
+   "fieldname": "leaves_cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tickets_expense_cost_center",
+   "fieldtype": "Link",
+   "label": "Expense Cost Center",
+   "options": "Cost Center",
+   "read_only": 1
+  },
+  {
+   "fieldname": "leaves_expense_cost_center",
+   "fieldtype": "Link",
+   "label": "Expense Cost Center",
+   "options": "Cost Center",
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_of_service_expense_cost_center",
+   "fieldtype": "Link",
+   "label": "Expense Cost Center",
+   "options": "Cost Center",
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_of_service_cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tickets_operation_expense_account",
+   "fieldtype": "Link",
+   "label": "Operation Expense Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "leaves_operation_expense_account",
+   "fieldtype": "Link",
+   "label": "Operation Expense Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_of_service_operation_expense_account",
+   "fieldtype": "Link",
+   "label": "Operation Expense Account",
+   "options": "Account",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-24 23:59:31.224691",
+ "modified_by": "Administrator",
+ "module": "Provisions",
+ "name": "Provisions Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
